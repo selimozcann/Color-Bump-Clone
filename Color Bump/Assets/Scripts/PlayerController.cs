@@ -11,22 +11,26 @@ public class PlayerController : MonoBehaviour
 
     public float bounds = 5f;
 
+    private CameraFollow cameraFollow;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        cameraFollow = FindObjectOfType<CameraFollow>();
     }
 
     void Update()
     {
         transform.position = new Vector3(Mathf.Clamp(transform.position.x,-bounds,bounds),transform.position.y,transform.position.z);
-        transform.position += FindObjectOfType<CameraFollow>().camVel;
+        transform.position += cameraFollow.camVel;
+        // transform.position += FindObjectOfType<CameraFollow>().camVel;
     }
     void FixedUpdate()
     {
         if (Input.GetMouseButtonDown(0))
         {
             lastMousePos = Input.mousePosition;
-            Debug.Log("Down");
+            // Debug.Log("Down");
         }
         if (Input.GetMouseButton(0))
         {

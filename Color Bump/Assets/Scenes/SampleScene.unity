@@ -5230,8 +5230,8 @@ MonoBehaviour:
   rb: {fileID: 501909597}
   cam: {fileID: 963194227}
   cameraSettings: {fileID: 11400000, guid: 9b5cf83d564aeb3409f829169faead58, type: 2}
-  sensitivity: 0.08
-  clampDelta: 21
+  sensitivity: 0.05
+  clampDelta: 28
   bounds: 5
 --- !u!114 &501909599
 MonoBehaviour:

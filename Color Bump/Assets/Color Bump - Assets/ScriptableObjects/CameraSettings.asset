@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af69b9048b54f66419a623e0a89f8992, type: 3}
   m_Name: CameraSettings
   m_EditorClassIdentifier: 
-  cameraSpeed: 1
+  cameraSpeed: 1.5
   cameraVelocity: {x: 0, y: 0, z: 0.1}
